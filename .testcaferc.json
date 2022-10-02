@@ -1,0 +1,24 @@
+{
+    "skipJsErrors": true,
+    "debugMode": false,
+    "debugOnFail": true,
+    "hostname": "localhost",
+    "browsers": "chrome --start-fullscreen",
+    "reporter": {
+        "name": "xunit",
+        "output": "reports/report.xml"
+    },
+    "screenshots": {
+        "path": "reports",
+        "takeOnFails": true,
+        "pathPattern": "${FIXTURE}/${TEST}/${USERAGENT}-${FILE_INDEX}.png",
+        "fullPage": true,
+        "thumbnails": false
+    },
+    "videoPath": "reports",
+    "videoOptions": {
+        "singleFile": false,
+        "failedOnly": true,
+        "pathPattern":  "${FIXTURE}/${TEST}/${USERAGENT}-${FILE_INDEX}.mp4"
+    }
+}
