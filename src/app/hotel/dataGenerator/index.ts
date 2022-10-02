@@ -1,0 +1,1 @@
+export {dataGenenator} from './dataGenerator'
