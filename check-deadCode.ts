@@ -40,9 +40,6 @@ function checkDeadCode(lines, excludes) {
   console.log(
     `Ignored: ${ignored.length} | Used in module: ${usedInModule.length} | Dead code: ${deadCode.length}`
   )
-  console.log(
-    `Check https://doc.pages.klaxoon.com/frontusaurus/docs/dead-code/ for more information.`
-  )
 
   if (usedInModule.length || deadCode.length) {
     process.exit(1)
